@@ -1,0 +1,15 @@
+<configuration>
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <layout class="ch.qos.logback.classic.PatternLayout">
+      <Pattern>%d %5level %logger - %m%n</Pattern>
+    </layout>
+  </appender>
+
+  <logger name="com.rulefinancial" level="DEBUG"/>
+  <logger name="org.hibernate.transaction" level="DEBUG"/>
+
+  <root level="INFO">
+    <appender-ref ref="CONSOLE"/>
+  </root>
+
+</configuration>
